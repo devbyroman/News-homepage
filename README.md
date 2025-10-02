@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/yourusername/news-homepage)
-- Live Site URL: [Live Demo](https://yourusername.github.io/news-homepage)
+- Live Site URL: [Live Demo](https://news-homepage-three-rouge.vercel.app/)
 
 ## My process
 
