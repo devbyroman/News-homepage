@@ -1,0 +1,55 @@
+.trending {
+  @include desktop {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+}
+
+.trending-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 6.25rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+}
+
+.trending-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $soft-red;
+  margin-bottom: 0.75rem;
+}
+
+.trending-content h3 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: $very-dark-blue;
+  margin-bottom: 0.5rem;
+
+  a {
+    transition: color 0.2s;
+
+    &:hover {
+      color: $soft-red;
+    }
+  }
+}
+
+.trending-content p {
+  line-height: 1.7;
+}

@@ -1,0 +1,105 @@
+.nav {
+  @include mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 16rem;
+    height: 100vh;
+    background: $off-white;
+    padding: 9rem 1.5rem 2rem;
+    transition: right 0.3s;
+    z-index: 1000;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  @include desktop {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.nav-list {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+
+.nav-list li {
+  @include mobile {
+    margin-bottom: 1.5rem;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.nav-link {
+  font-size: 1.125rem;
+  color: $very-dark-blue;
+  transition: color 0.2s;
+
+  @include desktop {
+    font-size: 0.9375rem;
+    color: $dark-grayish-blue;
+  }
+
+  &:hover {
+    color: $soft-red;
+  }
+}
+
+.menu-toggle {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  width: 2.5rem;
+  height: 1.0625rem;
+
+  @include desktop {
+    display: none;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .icon-hamburger {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .icon-close {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  &.active .icon-hamburger {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  &.active .icon-close {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

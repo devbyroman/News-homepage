@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  background: $soft-red;
+  color: $off-white;
+  padding: 0.875rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.25em;
+  transition: background 0.2s;
+
+  &:hover {
+    background: $very-dark-blue;
+  }
+}
