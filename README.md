@@ -109,37 +109,6 @@ Areas I want to continue focusing on:
 
 ---
 
-## Project Structure
-
-news-homepage/
-├── assets/
-│ ├── fonts/
-│ └── images/
-├── styles/
-│ ├── abstracts/
-│ │ ├── _variables.scss
-│ │ └── _mixins.scss
-│ ├── base/
-│ │ ├── _reset.scss
-│ │ └── _typography.scss
-│ ├── components/
-│ │ ├── _buttons.scss
-│ │ ├── _header.scss
-│ │ ├── _navigation.scss
-│ │ └── _overlay.scss
-│ ├── layout/
-│ │ ├── _container.scss
-│ │ ├── _grid.scss
-│ │ ├── _hero.scss
-│ │ ├── _sidebar.scss
-│ │ └── _trending.scss
-│ └── main.scss
-├── js/
-│ └── script.js
-├── index.html
-└── README.md
-
-
 ## Installation
 
 1. Clone the repository:
